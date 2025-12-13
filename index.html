@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>הפרויקט שלי בענן</title>
+    <style>
+        :root {
+            --primary: #FF9900; /* AWS Orange */
+            --secondary: #232F3E; /* AWS Dark Blue */
+            --bg: #f8f9fa;
+            --card: #ffffff;
+            --text: #333333;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            background: var(--card);
+            max-width: 600px;
+            width: 100%;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            text-align: center;
+            border-top: 6px solid var(--primary);
+        }
+
+        h1 {
+            color: var(--secondary);
+            margin-bottom: 10px;
+        }
+
+        .badge {
+            background-color: #e3f2fd;
+            color: #0d47a1;
+            padding: 5px 15px;
+            border-radius: 50px;
+            font-size: 0.9rem;
+            font-weight: bold;
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+
+        .success-icon {
+            font-size: 50px;
+            color: #28a745;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: 30px;
+            color: #555;
+        }
+
+        .tech-stack {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 30px;
+            flex-wrap: wrap;
+        }
+
+        .tech-item {
+            border: 1px solid #ddd;
+            padding: 8px 16px;
+            border-radius: 8px;
+            font-size: 0.9rem;
+            background: #fff;
+        }
+
+        .footer {
+            margin-top: 40px;
+            font-size: 0.85rem;
+            color: #888;
+            border-top: 1px solid #eee;
+            padding-top: 20px;
+        }
+
+        /* אנימציה קטנה לוי */
+        @keyframes popIn {
+            0% { transform: scale(0); opacity: 0; }
+            80% { transform: scale(1.2); opacity: 1; }
+            100% { transform: scale(1); }
+        }
+
+        .success-icon {
+            animation: popIn 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="success-icon">✓</div>
+        <div class="badge">AWS Project</div>
+        <h1>זה עובד!</h1>
+        <p>
+            אם אתם רואים את הדף הזה, סימן שהגדרתי בהצלחה 
+            <strong>AWS S3 Static Website</strong>.
+            <br><br>
+            הקובץ הזה יושב כרגע בתוך Bucket בענן, מוגדר עם הרשאות גישה פומביות, וזמין לכל העולם.
+        </p>
+
+        <div class="tech-stack">
+            <div class="tech-item">S3 Bucket</div>
+            <div class="tech-item">HTML5</div>
+            <div class="tech-item">Public Policy</div>
+            <div class="tech-item">Cloud Hosting</div>
+        </div>
+
+        <div class="footer">
+            נוצר כחלק מפרויקט לימוד מחשוב ענן
+        </div>
+    </div>
+
+</body>
+</html>
