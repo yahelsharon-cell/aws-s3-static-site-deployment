@@ -14,3 +14,6 @@ This project demonstrates the deployment of a static website using AWS cloud inf
 * AWS S3
 * Cloud Security (IAM Policies)
 * HTML5
+
+## Acknowledgments
+This project was developed with the assistance of AI tools (Gemini) for troubleshooting and generating documentation.
